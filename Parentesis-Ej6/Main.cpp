@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #include <algorithm>
-#include "Pila.h"
+#include "pila.h"
 #include <string>
 const char arrayOpen[3] = { '(','{','[' };
 const char arrayClose[3] = { ')','}',']' };
@@ -30,7 +30,7 @@ bool resuelveCaso()
 {
 	string caso;
 	getline(cin, caso);
-	if (caso.empty())return false;
+	if (!cin)return false;
 	else
 	{
 		pila<char> p;
@@ -49,6 +49,7 @@ bool resuelveCaso()
 				}
 			}
 		}
+		if (!p.empty())ok = false;
 		if (ok)cout << "SI\n";
 		else cout << "NO\n";
 		return true;
