@@ -9,8 +9,8 @@ class pila
 {
 protected:
 	static const int TAM_INI = 10;// tamaño inicial del array dinámico
-    
-    // número de elementos en la pila
+
+	// número de elementos en la pila
 	int nelems;
 
 	// tamaño del array

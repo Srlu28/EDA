@@ -17,13 +17,16 @@ tAccidente leerAccidente()
 	tFecha f;
 	char c;
 	cin >> f.dia;
+	if (f.dia > 31 || f.dia < 0)throw domain_error("el dia introducido no es valido");
 	cin >> c;
 	cin >> f.mes;
+	if (f.mes > 12 || f.mes < 0)throw domain_error("el mes introducido no es valido");
 	cin >> c;
 	cin >> f.ano;
 	tAccidente acc;
 	acc.f = f;
 	cin >> acc.victimas;
+	if (acc.victimas < 0)throw domain_error("No puede haber un numero negativo de victimas");
 	return acc;
 }
 void mostrarAccidente(tAccidente acc)
@@ -41,24 +44,20 @@ bool resuelveCaso()
 		pila<tAccidente> p;
 		for (int i = 0; i < numCasos; i++)
 		{
-			acc = leerAccidente();
-			try
-			{
-				while (p.top().victimas < acc.victimas)
-				{
-					p.pop();
-				}
-				mostrarAccidente(p.top());
+			try {
+				tAccidente acc;
+				acc = leerAccidente();
+				while (!p.empty() && p.top().victimas <= acc.victimas) p.pop();
+				if (p.empty())cout << "NO HAY" << endl;
+				else mostrarAccidente(p.top());
 				p.push(acc);
 			}
-			catch (domain_error & e)
-			{
-				cout << "NO HAY\n";
-				p.push(acc);
+			catch (domain_error e) {
+
 			}
 			
 		}
-		cout << "---";
+		cout << "---"<<endl;
 		return true;
 	}
 }
