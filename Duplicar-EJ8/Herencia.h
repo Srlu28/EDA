@@ -17,16 +17,28 @@ public:
 		}
 		o << endl;
 	}
-	void duplica()
+	void duplica(Nodo * n)
 	{
-		int num = this->size();
-		for (int i=0; i < num; i++)
-		{
-			T elem = this->front();
-			this->pop();
-			this->push(elem);
-			this->push(elem);
+		//Fin de la recursion
+		if (n == this->ult) {
+			Nodo* nuevo = new Nodo(n->elem, n->sig);
+			n->sig = nuevo;
+			this->ult = nuevo;
+			this->nelems++;
 		}
+		else {
+			//El siguiente del duplicado es el mismo que el anterior
+			Nodo* nuevo = new Nodo(n->elem, n->sig);
+			n->sig = nuevo;
+			this->nelems++;
+			duplica(nuevo->sig);
+		}
+	}
+	void funct()
+	{
+		Nodo* n = this->prim;
+		if(!this->empty())
+			duplica(n);
 	}
 };
 #endif

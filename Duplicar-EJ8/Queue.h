@@ -1,16 +1,3 @@
-//
-//  queue_eda.h
-//
-//  Implementación del TAD cola con nodos enlazados
-//  y punteros al primero y al último nodo
-//
-//  Estructuras de Datos
-//  Facultad de Informática
-//  Universidad Complutense de Madrid
-//
-//  Copyright (c) 2020 Alberto Verdejo
-//
-
 #ifndef queue_eda_h
 #define queue_eda_h
 #include<iostream>

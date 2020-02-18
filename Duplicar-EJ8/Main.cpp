@@ -18,7 +18,7 @@ bool resuleveCaso()
 			c.push(num);
 			cin >> num;
 		}
-		c.duplica();
+		c.funct();
 		c.print(cout);
 		return true;
 	}
