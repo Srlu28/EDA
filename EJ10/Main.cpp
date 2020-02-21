@@ -23,12 +23,13 @@ bool resuelveCaso()
 			l2.push(n);
 		}
 		l.inserta(l2,pos);
+		l.print();
 		return true;
 	}
 }
 
 int main()
 {
-	while(resuelveCaso())
+	while (resuelveCaso());
 	return 0;
 }
