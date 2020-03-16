@@ -1,0 +1,29 @@
+#include <iostream>
+#include <algorithm>
+#include<math.h>
+using namespace std;
+
+int res()
+{
+	int hijos=0,maxi=0;
+	cin >> hijos;
+	if (!hijos)return 1;
+	else {
+		for (int i = 0; i < hijos; i++)
+		{
+			maxi = max(maxi, res());
+		}
+		return 1 + maxi;
+	}
+}
+
+int main()
+{
+	int nC;
+	cin >> nC;
+	for (int i = 0; i < nC; i++)
+	{
+		cout << res() << endl;
+	}
+
+}
