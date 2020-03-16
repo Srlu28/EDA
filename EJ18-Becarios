@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+#include <algorithm>
+
+int precarios(int minJefes, int longit)
+{
+	int numHijos;
+	int prec = 0;
+	cin >> numHijos;
+	if (numHijos==0)
+	{
+		if (longit >= minJefes)
+			return 1;
+		else return 0;
+	}
+	else
+	{
+		for (int i = 0; i < numHijos; i++)
+		{
+			prec+=precarios(minJefes, longit+1);
+		}
+		return prec;
+	}
+}
+bool resuelveCaso()
+{
+	int minJefes;
+	cin >> minJefes;
+	if (!cin)return false;
+	cout << precarios(minJefes, 0) << endl;
+	return true;
+
+}
+int main()
+{
+	while (resuelveCaso());
+	return 0;
+}
