@@ -45,13 +45,13 @@ vector<bool> cargarPrimos()
 	return primos;
 }
 
-void resolverCaso()
+void resolverCaso(const vector<bool> & primos)
 {
 	bintree<int> t = leerArbol(-1);
 
 	tDevolver info = { 0,0 };
 
-	vector<bool> primos = cargarPrimos();
+	
 	
 	info = ejercicio(t,1,primos);
 
@@ -67,6 +67,7 @@ int main()
 {
 	int numC;
 	cin >> numC;
+	vector<bool> primos = cargarPrimos();
 	for (int i = 0; i < numC; i++)
-		resolverCaso();
+		resolverCaso(primos);
 }
