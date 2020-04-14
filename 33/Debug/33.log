@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\Users\Luis\source\repos\33\33\Main.cpp(55,70): warning C4804: '>': uso no seguro del tipo 'bool' en la operación
+  33.vcxproj -> C:\Users\Luis\source\repos\33\Debug\33.exe
