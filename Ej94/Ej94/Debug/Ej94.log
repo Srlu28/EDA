@@ -1,0 +1,4 @@
+﻿  Main.cpp
+  The contents of <optional> are available only with C++17 or later.
+C:\Users\Luis\source\repos\Ej94\Ej94\Main.cpp(192): warning C4715: 'unirOperacion': no todas las rutas de acceso de control devuelven un valor
+  Ej94.vcxproj -> C:\Users\Luis\source\repos\Ej94\Debug\Ej94.exe
