@@ -1,0 +1,11 @@
+﻿  Main.cpp
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\iPud.h(75,21): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(76,32): warning C4018: '>': no coinciden signed/unsigned
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(26,23): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(39,23): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(53,23): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(64,23): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(85,31): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(97,23): warning C4101: 'e': variable local sin referencia
+C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\iPud\Main.cpp(111,23): warning C4101: 'e': variable local sin referencia
+  iPud.vcxproj -> C:\Users\Luis\Desktop\Eda Tema 4 y 5\Ejercicios\iPud\Debug\iPud.exe

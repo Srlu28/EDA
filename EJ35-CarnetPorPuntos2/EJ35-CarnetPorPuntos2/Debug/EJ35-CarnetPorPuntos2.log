@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\Estructuras de datos\Ejercicios\EJ35-CarnetPorPuntos2\EJ35-CarnetPorPuntos2\CarnetPorPuntos2.h(85,1): warning C4804: '>': uso no seguro del tipo 'bool' en la operación
+  EJ35-CarnetPorPuntos2.vcxproj -> D:\Estructuras de datos\Ejercicios\EJ35-CarnetPorPuntos2\Debug\EJ35-CarnetPorPuntos2.exe
